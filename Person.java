@@ -3,13 +3,11 @@ public abstract class Person{
     // attribute
     private String name;
     private String status;
-    private String ID;
 
     // constructor
-    Person(String name, String status, String ID){
+    Person(String name, String status){
         this.name = name;
         this.status = status;
-        this.ID = ID;
     }
 
     // getter
@@ -19,10 +17,6 @@ public abstract class Person{
 
     public String getStatus(){
         return this.status;
-    }
-
-    public String getID(){
-        return this.ID;
     }
 
     // abstract method
