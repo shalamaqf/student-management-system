@@ -8,12 +8,13 @@ public class Main {
         
         // create student object
         Student student1 = new Student("Ellie", "Student", "12345");
-
-        student1.display();
-        mathCourse.display();
+        Student student2 = new Student("Abby", "Student", "56789");
 
         mathCourse.addStudent(student1);
+        mathCourse.addStudent(student2);
         mathCourse.display();
+        student1.display();
+        
         
 
        

@@ -21,6 +21,8 @@ public class Course {
     // function to add student to student's array list
     public void addStudent(Student student){
         studentlist.add(student);
+        student.setCourse(this);
+        
     }
 
     // function to display course's information

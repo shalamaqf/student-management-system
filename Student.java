@@ -10,6 +10,11 @@ public class Student extends Person{
         this.studentID = studentID;
     }
 
+    // setter
+    public void setCourse(Course course){
+        this.course = course;
+    }
+
     // function to display student's information
     public void display(){
         System.out.println("Name\t: " + this.getName());
