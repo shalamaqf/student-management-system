@@ -28,5 +28,17 @@ public class Student extends Person{
         }
     }
 
-    
+    // check if object is equal
+    public boolean isEqual(Object obj){
+        if (this == obj){
+            return true;
+        }else if (obj == null || getClass() != obj.getClass()){
+            return false;
+        }else{
+            Student other = (Student) obj;
+            return this.studentID.equals(other.studentID);
+
+        }
+    }
+
 }

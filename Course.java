@@ -37,5 +37,16 @@ public class Course {
         System.out.println("\n");
     }
 
+    // function to remove student from the course
+    public void removeStudent(Student student){
+        if (studentlist.contains(student)){
+            studentlist.remove(student);
+            student.setCourse(null);
+            System.out.println(student.getName() + " removed successfully!\n");
+        }else{
+            System.out.println(student.getName() + " not found\n");
+        }
+    }
+
 
 }

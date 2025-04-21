@@ -15,7 +15,10 @@ public class Main {
         mathCourse.display();
         student1.display();
         
-        
+        mathCourse.removeStudent(student2);
+        mathCourse.display();
+
+        student2.display();        
 
        
 
